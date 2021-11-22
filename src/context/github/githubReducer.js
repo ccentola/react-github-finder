@@ -34,8 +34,11 @@ export default (state, action) => {
         loading: false,
       };
     case GET_REPOS:
-    case SET_ALERT:
-    case REMOVE_ALERT:
+      return {
+        ...state,
+        repos: action.payload,
+        loading: false,
+      };
     default:
       return state;
   }
