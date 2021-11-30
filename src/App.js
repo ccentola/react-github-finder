@@ -18,7 +18,7 @@ const App = () => (
       <BrowserRouter>
         <div className="App">
           <Navbar title="Github Finder" icon="fab fa-github" />
-          <div className="container">
+          <div className="ui container">
             <Alert />
             <Switch>
               <Route exact path="/" component={Home} />
